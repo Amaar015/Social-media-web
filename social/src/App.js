@@ -18,7 +18,21 @@ function App() {
         backgroundColor:'pink',
         color:"#333",
         margin:5,
+        "&:hover":{
+          backgroundColor:'lightblue'
+        }
       }}>Bare Log</Button>
+       <Button disabled variant='contianed' sx={{
+        backgroundColor:'pink',
+        color:"#333",
+        margin:5,
+        "&:hover":{
+          backgroundColor:'lightblue'
+        },
+        "&:disabled":{
+            backgroundColor:"black"
+        }
+      }}>Amaar</Button>
      </div>
   );
 }
