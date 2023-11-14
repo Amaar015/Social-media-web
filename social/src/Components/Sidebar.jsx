@@ -7,12 +7,12 @@ import GroupIcon from '@mui/icons-material/Group';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import PersonIcon from '@mui/icons-material/Person';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
-function Sidebar() {
+function Sidebar({mode , setmode}) {
     return (
        <Box  flex={1} p={2} sx={{
          display:{xs:'none', sm:"block"}
        }}>
-      
+      <Box position="fixed">
       <List>
           <ListItem disablePadding>
             <ListItemButton component='a' href="#home">
@@ -77,12 +77,12 @@ function Sidebar() {
               <ListItemIcon>
                 <ModeNightIcon />
               </ListItemIcon>
-              <Switch/>
+              <Switch onChange={e=>setmode(mode==='light' ? "dark" : "light")}/>
             </ListItemButton>
             </ListItem>
             
           </List>
-
+          </Box>
        </Box>
     );
   }
