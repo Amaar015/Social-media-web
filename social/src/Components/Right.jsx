@@ -11,6 +11,7 @@ import user7 from '../image/user7.jpg';
 import user8 from '../image/user8.jpg';
 import user9 from '../image/user9.png';
 import user10 from '../image/user10.jpg';
+
 function Right() {
     return (
        <Box flex={2}
@@ -116,22 +117,22 @@ const itemData = [
 const chatData = [
   {
 
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvUt5pFtC_O89k0CTTd1b7tc1IAvC1q65rhaD0cGbEpiuvYRBFzbdvJcImfmZ3WKtXcY&usqp=CAU',
+    img: './image/user5.jpg',
     title: 'Bare Log',
     description:' Do you have Paris recommendations? Have you ever…',
   },
   {
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78jyDzsusFtTrdpkR0NQb8G4uRSGnzZ3MSQ&usqp=CAU',
+    img: './image/user-2.png',
     title: 'Amaar',
     description:' Do you have Paris recommendations? Have you ever…',
   },
   {
-     img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F2002403-man-with-beard-avatar-character-isolated-icon&psig=AOvVaw3VMSL1UFD0WcQVpMNv52HE&ust=1699987792682000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCm4uOmwYIDFQAAAAAdAAAAABAE',
+     img:'./image/user9.png',
     title: 'Kashif Ali',
     description:' Do you have Paris recommendations? Have you ever…',
   },
   {
-    img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-agvlo&psig=AOvVaw3VMSL1UFD0WcQVpMNv52HE&ust=1699987792682000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCm4uOmwYIDFQAAAAAdAAAAABAJ',
+    img:'./image/user7.jpg',
      title: 'Khazina',
     description:' Do you have Paris recommendations? Have you ever…',
   }

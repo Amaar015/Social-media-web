@@ -11,11 +11,12 @@ import user from '../image/user.png'
 
 const Post = () => {
   return (
-            
+        <>
+    {PostData.map((post)=>(
     <Card sx={{margin:5}}>
     <CardHeader
       avatar={
-        <Avatar src={user}  aria-label="recipe">
+        <Avatar src={post.userImg}  aria-label="recipe">
           
         </Avatar>
       }
@@ -24,20 +25,18 @@ const Post = () => {
           <MoreVertIcon />
         </IconButton>
       }
-      title="Shrimp and Chorizo Paella"
-      subheader="September 14, 2016"
+      title={post.username}
+      subheader={post.date}
     />
     <CardMedia
       component="img"
       height="5%"
-      image={post}
+      image={post.img}
       alt="Paella dish"
     />
     <CardContent>
       <Typography variant="body2" color="text.secondary">
-        This impressive paella is a perfect party dish and a fun meal to cook
-        together with your guests. Add 1 cup of frozen peas along with the mussels,
-        if you like.
+       {post.description}
       </Typography>
     </CardContent>
     <CardActions disableSpacing>
@@ -50,6 +49,8 @@ const Post = () => {
     </CardActions>
         
   </Card>
+  ))}
+  </>
   )
 }
 
@@ -58,26 +59,69 @@ export default Post
 
 
 
-const chatData = [
+const PostData = [
   {
-
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvUt5pFtC_O89k0CTTd1b7tc1IAvC1q65rhaD0cGbEpiuvYRBFzbdvJcImfmZ3WKtXcY&usqp=CAU',
-    title: 'Bare Log',
-    description:' Do you have Paris recommendations? Have you ever…',
+// 4
+    userImg:"./image/user5.jpg",
+    date:'September 14, 2016',
+    username:"Bare Log",
+    img: './image/post-1.jpeg',
+    description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
   },
   {
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78jyDzsusFtTrdpkR0NQb8G4uRSGnzZ3MSQ&usqp=CAU',
-    title: 'Amaar',
-    description:' Do you have Paris recommendations? Have you ever…',
+// 3
+    userImg:"./image/user-2.png",
+    date:'September 14, 2016',
+    username:"Amaar Raza",
+    img: './image/post-3.webp',
+    description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
   },
   {
-     img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F2002403-man-with-beard-avatar-character-isolated-icon&psig=AOvVaw3VMSL1UFD0WcQVpMNv52HE&ust=1699987792682000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCm4uOmwYIDFQAAAAAdAAAAABAE',
-    title: 'Kashif Ali',
-    description:' Do you have Paris recommendations? Have you ever…',
+// 2
+    userImg:"./image/user7.jpg",
+    date:'September 27, 2027',
+    username:"Khazina Batool",
+    img: './image/post-4.jpeg',
+    description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
   },
   {
-    img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-agvlo&psig=AOvVaw3VMSL1UFD0WcQVpMNv52HE&ust=1699987792682000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCm4uOmwYIDFQAAAAAdAAAAABAJ',
-     title: 'Khazina',
-    description:' Do you have Paris recommendations? Have you ever…',
-  }
+// 1
+    userImg:"./image/user-4.png",
+    date:'September 14, 2016',
+    username:"Kashif Khoso",
+    img: './image/post-9.jpeg',
+    description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
+  },
+  {
+    // 4
+        userImg:"./image/user6.png",
+        date:'September 14, 2016',
+        username:"Aijaz Ali",
+        img: './image/post-6.jpg',
+        description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
+      },
+      {
+    // 3
+        userImg:"./image/user5.jpg",
+        date:'September 14, 2016',
+        username:"Bare Log",
+        img: './image/post-7.jpg',
+        description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
+      },
+      {
+    // 2
+        userImg:"./image/user9.png",
+        date:'September 14, 2016',
+        username:"Mahmood Abassi",
+        img: './image/post-8.jpeg',
+        description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
+      },
+      {
+    // 1
+        userImg:"./image/user-1.jpg",
+        date:'September 14, 2016',
+        username:"Kabira Khan",
+        img: './image/post-5.webp',
+        description:'   This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels,if you like.',
+      }
 ];
